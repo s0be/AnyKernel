@@ -1,7 +1,7 @@
 ui_print("AnyKernel Updater by Koush.");
 ui_print("Extracting System Files...");
 set_progress(1.000000);
-mount("yaffs", "MTD", "system", "/system");
+mount("yaffs2", "MTD", "system", "/system");
 package_extract_dir("system", "/system");
 unmount("/system");
 ui_print("Extracting Kernel files...");
